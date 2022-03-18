@@ -1,5 +1,5 @@
 import React from "react";
-import zentrale_logo from "../img/logo512.png";
+import zentrale_logo from "../img/zentrale_logo.png";
 
 export const Home = () => {
   return (

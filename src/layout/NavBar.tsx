@@ -9,8 +9,9 @@ export const NavBar = (): JSX.Element => {
         <div className="nav-logo">
           <Link to="/">
             <img src={logo} alt="modern circuits" className="logo" />
-            Modern Circuits
           </Link>
+          <br />
+          <h3>Modern Circuits</h3>
         </div>
         <div className="nav-links">
           <Link to="plugins">Plugins</Link>

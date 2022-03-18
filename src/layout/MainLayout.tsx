@@ -6,16 +6,15 @@ export const MainLayout = (): JSX.Element => {
   return (
     <div>
       <NavBar />
-      <hr />
       <div className="main-content">
         <Outlet />
       </div>
-      <hr />
       <footer>
         <Link to="#">Facebook</Link>
         <Link to="#">Twitter</Link>
         <Link to="#">Instagram</Link>
         <Link to="#">GitHub</Link>
+        <br />
         <Link to="impressum">Impressum</Link>
       </footer>
     </div>

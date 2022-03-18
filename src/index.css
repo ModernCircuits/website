@@ -2,6 +2,7 @@
 
 :root {
   --primary: #0f223a;
+  --primary-alpha: rgba(31, 71, 122, 0.4);
   --white: #eeeeee;
   --black: #131313;
 }
@@ -18,31 +19,164 @@
   color: var(--white);
 }
 
-body {
-  background: var(--primary);
-}
-
 #root {
   max-width: 75%;
   margin: 0px auto;
 }
 
+body {
+  background: var(--primary);
+}
+
+footer {
+  background: var(--black);
+}
+
+nav {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-height: 20vh;
+  width: 75%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-logo {
+  grid-column-start: 2;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+
+  background-color: var(--primary);
+  border-radius: 0px 0px 16px 16px;
+}
+
+.nav-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  width: 50%;
+}
+
+.nav-logo h3 {
+  grid-row-start: 3;
+}
+
+.nav-links {
+  grid-column-start: 10;
+  grid-column-end: span 6;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
 .page-content {
-  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+  padding-top: 20vh;
+  min-height: 80vh;
+  max-height: 100vh;
 }
 
 .page-home {
   background-image: url("img/background_home.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-home-welcome {
+  grid-column-start: 8;
+  grid-column-end: span 12;
+  grid-row-start: 4;
+  grid-row-end: span 6;
+
+  padding: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .page-impressum {
   background-image: url("img/background_impressum.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-about {
+  background-image: url("img/background_impressum.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-support {
+  background-image: url("img/background_plugins.jpg");
+  background-repeat: no-repeat;
 }
 
 .page-plugins {
   background-image: url("img/background_plugins.jpg");
+  background-repeat: no-repeat;
 }
 
 .section-main-zentrale {
   background-color: var(--black);
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+.card-primary {
+  background-color: var(--primary);
+}
+
+.card-primary-alpha {
+  background-color: var(--primary-alpha);
+}
+
+.card-person {
+  grid-column-end: span 4;
+  grid-row-start: 2;
+  grid-row-end: span 10;
+}
+
+.card-person img {
+  width: 75%;
+}
+
+.card-milan {
+  grid-column-start: 5;
+}
+
+.card-tobias {
+  grid-column-start: 11;
+}
+
+.card-lukas {
+  grid-column-start: 17;
+}
+
+.card-impressum {
+  grid-column-start: 12;
+  grid-column-end: span 8;
+  grid-row-start: 2;
+  grid-row-end: span 10;
 }

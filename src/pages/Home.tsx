@@ -4,10 +4,10 @@ export const Home = () => {
   return (
     <div>
       <div className="page-content page-home">
-        <p>
+        <div className="card card-primary page-home-welcome">
           A warm welcome to modern circuits from berlin wedding. We develop and
           manufacture professional audio technology in knobs and code.
-        </p>
+        </div>
       </div>
       <div className="section-main-zentrale">
         <h2>Zentrale</h2>

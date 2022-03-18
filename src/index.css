@@ -183,7 +183,12 @@ nav {
   grid-column-start: 12;
   grid-column-end: span 8;
   grid-row-start: 2;
-  grid-row-end: span 10;
+  grid-row-end: span 5;
+}
+
+.impressum-text {
+  height: 100%;
+  text-align: center;
 }
 
 .card-coming-soon {

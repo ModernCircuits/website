@@ -42,6 +42,7 @@ nav {
 }
 
 .center {
+  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -66,13 +67,8 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  grid-row-start: 1;
   grid-row-end: span 2;
-  width: 50%;
-}
-
-.nav-logo h3 {
-  grid-row-start: 3;
+  width: 65%;
 }
 
 .nav-links {
@@ -179,4 +175,23 @@ nav {
   grid-column-end: span 8;
   grid-row-start: 2;
   grid-row-end: span 10;
+}
+
+.card-coming-soon {
+  grid-column-start: 8;
+  grid-column-end: span 12;
+  grid-row-start: 3;
+  grid-row-end: span 8;
+}
+
+.section-main-zentrale {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.section-main-zentrale img {
+  width: 50%;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import zentrale_logo from "../img/logo512.png";
 
 export const Home = () => {
   return (
@@ -10,11 +11,14 @@ export const Home = () => {
         </div>
       </div>
       <div className="section-main-zentrale">
-        <h2>Zentrale</h2>
-        <p>
-          The fastest way to get modern circuits into your project. Manage and
-          download your licences. For PC, Mac and Linux
-        </p>
+        <div className="section-main-zentrale-left">
+          <h2>Zentrale</h2>
+          <p>
+            The fastest way to get modern circuits into your project. Manage and
+            download your licences. For PC, Mac and Linux
+          </p>
+        </div>
+        <img src={zentrale_logo} alt="Zentrale" className="center" />
       </div>
     </div>
   );

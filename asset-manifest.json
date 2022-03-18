@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.39c442fd.css",
-    "main.js": "/static/js/main.d3d07a7e.js",
+    "main.css": "/static/css/main.74eb0c35.css",
+    "main.js": "/static/js/main.6baae6a8.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/background_plugins.jpg": "/static/media/background_plugins.9df2a7575186de0f8d72.jpg",
     "static/media/background_impressum.jpg": "/static/media/background_impressum.5760fe35312729ee7b9c.jpg",
     "static/media/background_home.jpg": "/static/media/background_home.356299663043d1403a5d.jpg",
+    "static/media/tobias.jpg": "/static/media/tobias.995a7b5bae08339b6cc2.jpg",
+    "static/media/lukas.jpg": "/static/media/lukas.374d5b06fc36b134f8b4.jpg",
+    "static/media/milan.jpg": "/static/media/milan.2b3d2aaf1d49f7c66c71.jpg",
     "static/media/logo512.png": "/static/media/logo512.7a48cd7555e4088498b1.png",
     "index.html": "/index.html",
-    "main.39c442fd.css.map": "/static/css/main.39c442fd.css.map",
-    "main.d3d07a7e.js.map": "/static/js/main.d3d07a7e.js.map",
+    "main.74eb0c35.css.map": "/static/css/main.74eb0c35.css.map",
+    "main.6baae6a8.js.map": "/static/js/main.6baae6a8.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39c442fd.css",
-    "static/js/main.d3d07a7e.js"
+    "static/css/main.74eb0c35.css",
+    "static/js/main.6baae6a8.js"
   ]
 }

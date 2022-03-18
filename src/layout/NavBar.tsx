@@ -1,23 +1,21 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
+import logo from "../img/logo512.png";
 
 export const NavBar = (): JSX.Element => {
   return (
     <header>
       <nav>
-        <div className="container">
+        <div className="nav-logo">
           <Link to="/">
-            <img
-              src="https://modern-circuits.com/static/logo512.png"
-              alt="modern circuits"
-              className="logo"
-            />
+            <img src={logo} alt="modern circuits" className="logo" />
+            Modern Circuits
           </Link>
-          <div className="menu">
-            <Link to="plugins">Plugins</Link>
-            <Link to="about">About Us</Link>
-            <Link to="support">Support</Link>
-          </div>
+        </div>
+        <div className="nav-links">
+          <Link to="plugins">Plugins</Link>
+          <Link to="about">About Us</Link>
+          <Link to="support">Support</Link>
         </div>
       </nav>
     </header>

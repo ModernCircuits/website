@@ -1,0 +1,6 @@
+.card-login-form {
+  grid-column-start: 8;
+  grid-column-end: span 12;
+  grid-row-start: 3;
+  grid-row-end: span 6;
+}

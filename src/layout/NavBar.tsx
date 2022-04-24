@@ -33,7 +33,7 @@ export const NavBar = (): JSX.Element => {
             <Link to="#" className="nav-link">
               <img src={cart} alt="Shopping Cart" />
             </Link>
-            <Link to="#" className="nav-link">
+            <Link to="login" className="nav-link">
               <img src={user} alt="User Account" />
             </Link>
           </div>

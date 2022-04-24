@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Support.css";
+
 export const Support = () => {
   return (
     <div className="page-content page-support">

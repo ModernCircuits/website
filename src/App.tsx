@@ -8,6 +8,7 @@ import { Login } from "./pages/Login";
 import { Impressum } from "./pages/Impressum";
 import { NotFound } from "./pages/NotFound";
 import { MainLayout } from "./layout/MainLayout";
+import { User } from "./pages/User";
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
           <Route path="support" element={<Support />} />
           <Route path="impressum" element={<Impressum />} />
           <Route path="login" element={<Login />} />
+          <Route path="user" element={<User />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

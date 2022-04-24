@@ -1,3 +1,11 @@
+.page-login {
+  background-color: black;
+  background-image: url("../img/background_user.jpg");
+  /* background-position: 50% 0; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .card-login-form {
   grid-column-start: 8;
   grid-column-end: span 12;

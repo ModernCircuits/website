@@ -4,7 +4,7 @@ import "./Login.css";
 
 export const Login = (): JSX.Element => {
   return (
-    <div className="page-content page-support">
+    <div className="page-content page-login">
       <div className="card card-primary card-login-form">
         <h2 className="center">Login</h2>
         <hr />

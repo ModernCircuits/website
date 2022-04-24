@@ -41,6 +41,14 @@ nav {
   width: 75%;
 }
 
+nav h3 {
+  text-transform: uppercase;
+}
+
+nav h6 {
+  text-transform: lowercase;
+}
+
 nav a {
   background-color: var(--primary);
   text-transform: lowercase;
@@ -77,6 +85,8 @@ nav a {
 
   background-color: var(--primary);
   border-radius: 0px 0px 16px 16px;
+
+  padding: 0.5rem;
 }
 
 .nav-logo img {
@@ -195,11 +205,6 @@ nav a {
   grid-column-end: span 8;
   grid-row-start: 2;
   grid-row-end: span 5;
-}
-
-.impressum-text {
-  height: 100%;
-  text-align: center;
 }
 
 .card-coming-soon {

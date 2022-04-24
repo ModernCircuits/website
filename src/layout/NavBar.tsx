@@ -11,7 +11,8 @@ export const NavBar = (): JSX.Element => {
             <img src={logo} alt="modern circuits" className="logo" />
           </Link>
           <br />
-          <h3>Modern Circuits</h3>
+          <h3 className="center">Modern Circuits</h3>
+          <h6 className="center">Professional audio technology</h6>
         </div>
         <div className="nav-links">
           <Link to="plugins">Plugins</Link>

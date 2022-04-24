@@ -20,15 +20,23 @@ export const NavBar = (): JSX.Element => {
           <h6 className="center">Professional audio technology</h6>
         </div>
         <div className="nav-links">
-          <Link to="plugins">Plugins</Link>
-          <Link to="about">About Us</Link>
-          <Link to="support">Support</Link>
-          <Link to="#">
-            <img src={cart} alt="Shopping Cart" />
+          <Link to="plugins" className="nav-link nav-link-text">
+            Plugins
           </Link>
-          <Link to="#">
-            <img src={user} alt="User Account" />
+          <Link to="about" className="nav-link nav-link-text">
+            About Us
           </Link>
+          <Link to="support" className="nav-link nav-link-text">
+            Support
+          </Link>
+          <div className="nav-link-icons">
+            <Link to="#" className="nav-link">
+              <img src={cart} alt="Shopping Cart" />
+            </Link>
+            <Link to="#" className="nav-link">
+              <img src={user} alt="User Account" />
+            </Link>
+          </div>
         </div>
       </nav>
     </header>

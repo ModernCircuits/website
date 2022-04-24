@@ -15,16 +15,6 @@ nav h6 {
   text-transform: lowercase;
 }
 
-nav a {
-  background-color: var(--primary);
-  text-transform: lowercase;
-  align-self: center;
-  text-align: center;
-  border-radius: 0.5rem;
-  font-size: 1.25rem;
-  padding: 0.25rem;
-}
-
 .nav-logo {
   grid-column-start: 2;
   grid-column-end: span 3;
@@ -50,6 +40,19 @@ nav a {
   width: 65%;
 }
 
+.nav-link {
+  align-self: center;
+  padding: 0.25rem;
+}
+
+.nav-link-text {
+  background-color: var(--primary);
+  text-transform: lowercase;
+  text-align: center;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+}
+
 .nav-links {
   grid-column-start: 6;
   grid-column-end: span 16;
@@ -58,4 +61,8 @@ nav a {
   gap: 1rem;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(1, 1fr);
+}
+
+.nav-link-icons {
+  grid-column-start: 5;
 }

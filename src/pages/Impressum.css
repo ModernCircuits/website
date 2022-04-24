@@ -1,3 +1,8 @@
+.page-impressum {
+  background-image: url("../img/background_impressum.jpg");
+  background-repeat: no-repeat;
+}
+
 .card-impressum {
   grid-column-start: 8;
   grid-column-end: span 8;

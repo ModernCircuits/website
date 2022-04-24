@@ -1,0 +1,17 @@
+.page-plugins {
+  background-image: url("../img/background_plugins.jpg");
+  background-repeat: no-repeat;
+}
+
+.section-plugin-preview {
+  grid-column-start: 8;
+  grid-column-end: span 12;
+  grid-row-start: 2;
+  grid-row-end: span 6;
+
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}

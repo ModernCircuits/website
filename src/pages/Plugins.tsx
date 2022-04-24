@@ -11,6 +11,8 @@ import asic_shape_logo from "../img/asic/asic_shape_logo.png";
 import asic_space_logo from "../img/asic/asic_space_logo.png";
 import asic_tone_logo from "../img/asic/asic_tone_logo.png";
 
+import "./Plugins.css";
+
 export const Plugins = () => {
   return (
     <div className="page-content page-plugins">

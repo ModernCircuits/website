@@ -1,7 +1,10 @@
 import React from "react";
+
 import milan from "../img/milan.jpg";
 import tobias from "../img/tobias.jpg";
 import lukas from "../img/lukas.jpg";
+
+import "./About.css";
 
 export const About = () => {
   return (

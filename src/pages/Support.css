@@ -1,3 +1,8 @@
+.page-support {
+  background-image: url("../img/background_plugins.jpg");
+  background-repeat: no-repeat;
+}
+
 .card-coming-soon {
   grid-column-start: 8;
   grid-column-end: span 12;

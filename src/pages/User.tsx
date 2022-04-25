@@ -11,15 +11,18 @@ import "./User.css";
 interface UserProductProps {
   name: string;
   logo: string;
-  isSelected: boolean;
 }
 
 const UserProduct: React.FunctionComponent<
   UserProductProps & React.HTMLAttributes<HTMLDivElement>
 > = (props) => {
-  const c = props.isSelected ? "user-product-list-item-selected" : "";
+  const [open, setOpen] = React.useState(false);
+  const selected = open ? "user-product-list-item-selected" : "";
   return (
-    <div className={"user-product-list-item " + c}>
+    <div
+      className={"user-product-list-item " + selected}
+      onClick={() => setOpen(!open)}
+    >
       <img src={props.logo} alt={props.name} />
       <p>{props.name}</p>
     </div>
@@ -33,31 +36,11 @@ export const User = () => {
         <h2 className="card-heading center">Products</h2>
         <hr />
         <div className="user-product-list">
-          <UserProduct
-            name="ASIC Dynamic"
-            logo={asic_dynamic_logo}
-            isSelected={true}
-          />
-          <UserProduct
-            name="ASIC Filter"
-            logo={asic_filter_logo}
-            isSelected={false}
-          />
-          <UserProduct
-            name="ASIC Shape"
-            logo={asic_shape_logo}
-            isSelected={false}
-          />
-          <UserProduct
-            name="ASIC Space"
-            logo={asic_space_logo}
-            isSelected={false}
-          />
-          <UserProduct
-            name="ASIC Tone"
-            logo={asic_tone_logo}
-            isSelected={false}
-          />
+          <UserProduct name="ASIC Dynamic" logo={asic_dynamic_logo} />
+          <UserProduct name="ASIC Filter" logo={asic_filter_logo} />
+          <UserProduct name="ASIC Shape" logo={asic_shape_logo} />
+          <UserProduct name="ASIC Space" logo={asic_space_logo} />
+          <UserProduct name="ASIC Tone" logo={asic_tone_logo} />
         </div>
       </div>
       <div className="card card-primary card-user-info card-user-account-info ">

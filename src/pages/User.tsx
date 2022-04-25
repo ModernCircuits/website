@@ -11,21 +11,78 @@ import xmark from "../img/icons/xmark.svg";
 
 import "./User.css";
 
-interface UserProductProps {
+interface UserProductListItemProps {
   name: string;
   logo: string;
+  experies: string;
+  isOpen: boolean;
+  setOpen(id: string): void;
 }
 
-const UserProduct: React.FunctionComponent<
-  UserProductProps & React.HTMLAttributes<HTMLDivElement>
+const UserProductListItem: React.FunctionComponent<
+  UserProductListItemProps & React.HTMLAttributes<HTMLDivElement>
 > = (props) => {
-  const [open, setOpen] = React.useState(false);
-  const selected = open ? "user-product-list-item-selected" : "";
+  const selected = props.isOpen ? "user-product-list-item-selected" : "";
   return (
     <div className={"user-product-list-item " + selected}>
       <img src={props.logo} alt={props.name} />
-      <p>{props.name}</p>
-      <img src={open ? xmark : pen} alt="Edit" onClick={() => setOpen(!open)} />
+      <h3>{props.name}</h3>
+      <p>
+        Experies: <b>{`${props.experies}`}</b>
+      </p>
+      <img
+        src={props.isOpen ? xmark : pen}
+        alt="Edit"
+        onClick={() => props.setOpen(props.isOpen ? "" : props.name)}
+      />
+    </div>
+  );
+};
+
+const UserProductList = () => {
+  const products = [
+    {
+      name: "ASIC Dynamic",
+      logo: asic_dynamic_logo,
+      experies: "2022-12-31",
+    },
+    {
+      name: "ASIC Filter",
+      logo: asic_filter_logo,
+      experies: "2022-12-31",
+    },
+    {
+      name: "ASIC Shape",
+      logo: asic_shape_logo,
+      experies: "2022-12-31",
+    },
+    {
+      name: "ASIC Space",
+      logo: asic_space_logo,
+      experies: "2022-12-31",
+    },
+    {
+      name: "ASIC Tone",
+      logo: asic_tone_logo,
+      experies: "2022-12-31",
+    },
+  ];
+
+  const [selected, setSelected] = React.useState("");
+
+  return (
+    <div className="user-product-list">
+      {products.map((p) => {
+        return (
+          <UserProductListItem
+            name={p.name}
+            logo={p.logo}
+            experies={p.experies}
+            isOpen={selected === p.name}
+            setOpen={(id) => setSelected(id)}
+          />
+        );
+      })}
     </div>
   );
 };
@@ -39,13 +96,7 @@ export const User = () => {
       <div className="card card-primary card-user-info card-user-product-info ">
         <h2 className="card-heading center">Products</h2>
         <hr />
-        <div className="user-product-list">
-          <UserProduct name="ASIC Dynamic" logo={asic_dynamic_logo} />
-          <UserProduct name="ASIC Filter" logo={asic_filter_logo} />
-          <UserProduct name="ASIC Shape" logo={asic_shape_logo} />
-          <UserProduct name="ASIC Space" logo={asic_space_logo} />
-          <UserProduct name="ASIC Tone" logo={asic_tone_logo} />
-        </div>
+        <UserProductList />
       </div>
       <div className="card card-primary card-user-info card-user-account-info ">
         <h2 className="card-heading center">Account</h2>

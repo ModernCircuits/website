@@ -26,8 +26,8 @@
 
   display: flex;
   justify-content: left;
-  align-items: center;
-  height: 90%;
+  align-items: flex-start;
+  justify-content: space-between;
 
   margin: 0.5rem 0.5rem;
   padding: 0.25rem;
@@ -46,9 +46,13 @@
   max-height: 2rem;
 }
 
+.user-product-list-item h3 {
+  padding: 2% 2%;
+  font-size: 1.25em;
+}
 .user-product-list-item p {
   padding: 2% 5%;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 .card-user-account-info {

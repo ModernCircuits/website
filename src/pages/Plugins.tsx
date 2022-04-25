@@ -19,16 +19,21 @@ import "./Plugins.css";
 interface PluginPreviewProps {
   name: string;
   description: string;
-  img: string;
+  logo: string;
+  vlcd: string;
 }
 
 const PluginPreview = (props: PluginPreviewProps) => {
   return (
-    <div className="card card-primary ">
-      <h3 className="center">{props.name}</h3>
-      <hr />
-      <img src={props.img} alt={props.name} className="center" />
-      <p className="center">{props.description}</p>
+    <div className="card card-primary card-plugin-preview">
+      <div className="card-plugin-preview-heading">
+        <img src={props.logo} alt={props.name} className="center" />
+        <h3 className="card-plugin-preview-heading-text center">
+          {props.name}
+        </h3>
+      </div>
+      <img src={props.vlcd} alt={props.name} className="center" />
+      <h4 className="center">{props.description}</h4>
     </div>
   );
 };
@@ -37,9 +42,12 @@ interface BundlePreviewProps {}
 
 const BundlePreview = (props: BundlePreviewProps) => {
   return (
-    <div className="card card-primary ">
-      <h3 className="center">ASIC</h3>
-      <hr />
+    <div className="card card-primary card-plugin-preview">
+      <div className="card-plugin-preview-heading">
+        <h3 className="card-plugin-preview-heading-full center">
+          <b>ASIC</b>
+        </h3>
+      </div>
       <p className="asic-bundle-description">
         Designed for outstanding productions, great sound and a fast workflow.
         Five high-quality audio effects that work as VST3, AudioUnit and AAX in
@@ -56,13 +64,10 @@ const BundlePreview = (props: BundlePreviewProps) => {
           ]}
         />
       </div>
-      <div>
+      {/* <div>
         <p>$219 Single Payment</p>
         <p>$6/Month subscription</p>
-        <Link to="plugins" className="nav-link nav-link-text">
-          Buy
-        </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -74,28 +79,33 @@ export const Plugins = () => {
         <PluginPreview
           name="Shape"
           description="High quality saturation"
-          img={asic_shape_vlcd}
+          logo={asic_shape_logo}
+          vlcd={asic_shape_vlcd}
         />
         <BundlePreview />
         <PluginPreview
           name="Tone"
           description="Technical tuning device"
-          img={asic_tone_vlcd}
+          logo={asic_tone_logo}
+          vlcd={asic_tone_vlcd}
         />
         <PluginPreview
           name="Filter"
           description="Precise equalizer"
-          img={asic_filter_vlcd}
+          logo={asic_filter_logo}
+          vlcd={asic_filter_vlcd}
         />
         <PluginPreview
           name="Space"
           description="Intuitive room processor"
-          img={asic_space_vlcd}
+          logo={asic_space_logo}
+          vlcd={asic_space_vlcd}
         />
         <PluginPreview
           name="Dynamic"
           description="Precise peak controller"
-          img={asic_dynamic_vlcd}
+          logo={asic_dynamic_logo}
+          vlcd={asic_dynamic_vlcd}
         />
       </div>
     </div>

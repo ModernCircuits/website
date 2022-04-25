@@ -2,6 +2,12 @@ import React from "react";
 
 import "./Home.css";
 
+import asic_dynamic_screenshot_small from "../img/asic/asic_dynamic_screenshot_small.png";
+import asic_filter_screenshot_small from "../img/asic/asic_filter_screenshot_small.png";
+import asic_shape_screenshot_small from "../img/asic/asic_shape_screenshot_small.png";
+import asic_space_screenshot_small from "../img/asic/asic_space_screenshot_small.png";
+import asic_tone_screenshot_small from "../img/asic/asic_tone_screenshot_small.png";
+import { ImageGrid } from "../component/ImageGrid";
 interface HomeProductPreviewProps {
   name: string;
   short_description: string;
@@ -52,7 +58,17 @@ export const Home = () => {
           short_description={products[0].short_description}
           long_description={products[0].long_description}
           img={products[0].img}
-        />
+        >
+          <ImageGrid
+            items={[
+              { img: asic_shape_screenshot_small, alt: "ASIC Shape" },
+              { img: asic_tone_screenshot_small, alt: "ASIC Tone" },
+              { img: asic_filter_screenshot_small, alt: "ASIC Filter" },
+              { img: asic_space_screenshot_small, alt: "ASIC Space" },
+              { img: asic_dynamic_screenshot_small, alt: "ASIC Dynamic" },
+            ]}
+          />
+        </HomeProductPreview>
         <HomeProductPreview
           name={products[1].name}
           short_description={products[1].short_description}

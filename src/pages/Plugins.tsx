@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import { ImageGrid } from "../component/ImageGrid";
 
 import asic_dynamic_vlcd from "../img/asic/asic_dynamic_vlcd.png";
 import asic_filter_vlcd from "../img/asic/asic_filter_vlcd.png";
@@ -43,14 +46,23 @@ const BundlePreview = (props: BundlePreviewProps) => {
         almost any DAW.
       </p>
       <div className="center">
-        <img src={asic_shape_logo} alt="ASIC Shape" />
-        <img src={asic_filter_logo} alt="ASIC Filter" />
-        <img src={asic_space_logo} alt="ASIC Space" />
-        <img src={asic_dynamic_logo} alt="ASIC Dynamic" />
-        <img src={asic_tone_logo} alt="ASIC Tone" />
+        <ImageGrid
+          items={[
+            { img: asic_shape_logo, alt: "ASIC Shape" },
+            { img: asic_tone_logo, alt: "ASIC Tone" },
+            { img: asic_filter_logo, alt: "ASIC Filter" },
+            { img: asic_space_logo, alt: "ASIC Space" },
+            { img: asic_dynamic_logo, alt: "ASIC Dynamic" },
+          ]}
+        />
       </div>
-      <p>$219 Single Payment</p>
-      <p>$6/Month subscription</p>
+      <div>
+        <p>$219 Single Payment</p>
+        <p>$6/Month subscription</p>
+        <Link to="plugins" className="nav-link nav-link-text">
+          Buy
+        </Link>
+      </div>
     </div>
   );
 };

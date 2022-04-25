@@ -25,11 +25,14 @@ interface PluginPreviewProps {
 const PluginPreview = (props: PluginPreviewProps) => {
   return (
     <div className="card card-primary card-plugin-preview">
-      <div className="card-plugin-preview-heading">
-        <img src={props.logo} alt={props.name} className="center" />
-        <h3 className="card-plugin-preview-heading-text center">
-          {props.name}
-        </h3>
+      <div>
+        <div className="card-plugin-preview-heading">
+          <img src={props.logo} alt={props.name} className="center" />
+          <h3 className="card-plugin-preview-heading-text center">
+            {props.name}
+          </h3>
+        </div>
+        <hr />
       </div>
       <img src={props.vlcd} alt={props.name} className="center" />
       <h4 className="center">{props.description}</h4>
@@ -42,27 +45,28 @@ interface BundlePreviewProps {}
 const BundlePreview = (props: BundlePreviewProps) => {
   return (
     <div className="card card-primary card-plugin-preview">
-      <div className="card-plugin-preview-heading">
-        <h3 className="card-plugin-preview-heading-full center">
-          <b>ASIC</b>
-        </h3>
+      <div>
+        <div className="card-plugin-preview-heading">
+          <h3 className="card-plugin-preview-heading-full center">
+            <b>ASIC</b>
+          </h3>
+        </div>
+        <hr />
       </div>
       <p className="asic-bundle-description">
         Designed for outstanding productions, great sound and a fast workflow.
         Five high-quality audio effects that work as VST3, AudioUnit and AAX in
         almost any DAW.
       </p>
-      <div className="center">
-        <ImageGrid
-          items={[
-            { img: asic_shape_logo, alt: "ASIC Shape" },
-            { img: asic_tone_logo, alt: "ASIC Tone" },
-            { img: asic_filter_logo, alt: "ASIC Filter" },
-            { img: asic_space_logo, alt: "ASIC Space" },
-            { img: asic_dynamic_logo, alt: "ASIC Dynamic" },
-          ]}
-        />
-      </div>
+      <ImageGrid
+        items={[
+          { img: asic_shape_logo, alt: "ASIC Shape" },
+          { img: asic_tone_logo, alt: "ASIC Tone" },
+          { img: asic_filter_logo, alt: "ASIC Filter" },
+          { img: asic_space_logo, alt: "ASIC Space" },
+          { img: asic_dynamic_logo, alt: "ASIC Dynamic" },
+        ]}
+      />
       {/* <div>
         <p>$219 Single Payment</p>
         <p>$6/Month subscription</p>

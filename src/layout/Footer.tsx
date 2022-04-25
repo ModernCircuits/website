@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// import facebook from "../img/icons/brands/facebook.svg";
-// import twitter from "../img/icons/brands/twitter.svg";
-// import instagram from "../img/icons/brands/instagram.svg";
-// import github from "../img/icons/brands/github.svg";
-// import tiktok from "../img/icons/brands/tiktok.svg";
-// import youtube from "../img/icons/brands/youtube.svg";
+import facebook from "../img/icons/brands/facebook.svg";
+import twitter from "../img/icons/brands/twitter.svg";
+import instagram from "../img/icons/brands/instagram.svg";
+import github from "../img/icons/brands/github.svg";
+import tiktok from "../img/icons/brands/tiktok.svg";
+import youtube from "../img/icons/brands/youtube.svg";
 
 import "./Footer.css";
 
@@ -36,36 +36,36 @@ export const Footer = () => {
           <FooterSocialLink
             url="https://github.com/ModernCircuits"
             alt="Facebook"
-            icon=""
+            icon={facebook}
           />
           <FooterSocialLink
             url="https://github.com/ModernCircuits"
             alt="Instagram"
-            icon=""
+            icon={instagram}
           />
           <FooterSocialLink
             url="https://github.com/ModernCircuits"
             alt="Twitter"
-            icon=""
+            icon={twitter}
           />
           <FooterSocialLink
             url="https://github.com/ModernCircuits"
             alt="TikTok"
-            icon=""
+            icon={tiktok}
           />
           <FooterSocialLink
             url="https://github.com/ModernCircuits"
             alt="YouTube"
-            icon=""
+            icon={youtube}
           />
           <FooterSocialLink
             url="https://github.com/ModernCircuits"
             alt="GitHub"
-            icon=""
+            icon={github}
           />
         </div>
       </div>
-      <div className="footer-internal-links">
+      <div className="footer-internal-links footer-copyright">
         <p>Modern Circuits UG (haftungsbeschränkt). All rights reserved.</p>
       </div>
       <div className="footer-internal-links ">

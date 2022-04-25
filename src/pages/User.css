@@ -14,10 +14,6 @@
   grid-column-end: span 8;
 }
 
-.card-user-account-info {
-  grid-column-end: span 6;
-}
-
 .user-product-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -46,9 +42,36 @@
 
 .user-product-list-item img {
   padding: 1%;
+  max-width: 2rem;
+  max-height: 2rem;
 }
 
 .user-product-list-item p {
   padding: 2% 5%;
   font-size: 1.25em;
+}
+
+.card-user-account-info {
+  grid-column-end: span 6;
+}
+
+.card-user-account-property-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-user-account-property {
+  display: flex;
+  place-items: center;
+  width: 100%;
+
+  justify-items: center;
+}
+
+.card-user-account-property img {
+  max-width: 2rem;
+  max-height: 2rem;
 }

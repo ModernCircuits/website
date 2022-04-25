@@ -3,9 +3,18 @@
 }
 
 .card-home {
-  grid-column-end: span 8;
-  grid-row-start: 3;
+  grid-row-start: 2;
   grid-row-end: span 8;
+}
+
+.card-home-asic {
+  grid-column-start: 6;
+  grid-column-end: span 10;
+}
+
+.card-home-zentrale {
+  grid-column-start: 16;
+  grid-column-end: span 8;
 }
 
 .card-home * {

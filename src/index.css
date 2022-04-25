@@ -46,10 +46,6 @@ body {
   background: var(--primary-500);
 }
 
-footer {
-  background: var(--black);
-}
-
 .center {
   text-align: center;
   display: block;
@@ -66,7 +62,7 @@ footer {
 
 .page-content {
   display: grid;
-  gap: 1rem;
+  gap: 0.5rem;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(12, 1fr);
   justify-items: center;

@@ -15,11 +15,11 @@ interface HomeProductPreviewProps {
   img: string;
 }
 
-const HomeProductPreview: React.FunctionComponent<HomeProductPreviewProps> = (
-  props
-) => {
+const HomeProductPreview: React.FunctionComponent<
+  HomeProductPreviewProps & React.HTMLAttributes<HTMLDivElement>
+> = (props) => {
   return (
-    <div className="card card-primary card-home">
+    <div className={"card card-primary card-home " + props.className}>
       <h2 className="center">{props.name}</h2>
       <hr />
       <h3 className="center">{props.short_description}</h3>
@@ -58,6 +58,7 @@ export const Home = () => {
           short_description={products[0].short_description}
           long_description={products[0].long_description}
           img={products[0].img}
+          className="card-home-asic"
         >
           <ImageGrid
             items={[
@@ -74,8 +75,8 @@ export const Home = () => {
           short_description={products[1].short_description}
           long_description={products[1].long_description}
           img={products[1].img}
+          className="card-home-zentrale"
         >
-          {" "}
           <ImageGrid
             items={[
               { img: asic_shape_screenshot_small, alt: "ASIC Shape" },

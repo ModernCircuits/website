@@ -16,7 +16,7 @@ import "./Plugins.css";
 interface PluginPreviewProps {
   name: string;
   description: string;
-  img_vlcd: string;
+  img: string;
 }
 
 const PluginPreview = (props: PluginPreviewProps) => {
@@ -24,7 +24,7 @@ const PluginPreview = (props: PluginPreviewProps) => {
     <div className="card card-primary ">
       <h3 className="center">{props.name}</h3>
       <hr />
-      <img src={props.img_vlcd} alt={props.name} className="center" />
+      <img src={props.img} alt={props.name} className="center" />
       <p className="center">{props.description}</p>
     </div>
   );
@@ -62,28 +62,28 @@ export const Plugins = () => {
         <PluginPreview
           name="Shape"
           description="High quality saturation"
-          img_vlcd={asic_shape_vlcd}
+          img={asic_shape_vlcd}
         />
         <BundlePreview />
         <PluginPreview
           name="Tone"
           description="Technical tuning device"
-          img_vlcd={asic_tone_vlcd}
+          img={asic_tone_vlcd}
         />
         <PluginPreview
           name="Filter"
           description="Precise equalizer"
-          img_vlcd={asic_tone_vlcd}
+          img={asic_filter_vlcd}
         />
         <PluginPreview
           name="Space"
           description="Intuitive room processor"
-          img_vlcd={asic_space_vlcd}
+          img={asic_space_vlcd}
         />
         <PluginPreview
           name="Dynamic"
           description="Precise peak controller"
-          img_vlcd={asic_dynamic_vlcd}
+          img={asic_dynamic_vlcd}
         />
       </div>
     </div>

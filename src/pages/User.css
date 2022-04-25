@@ -2,3 +2,42 @@
   background-image: url("../img/background_user.jpg");
   background-repeat: no-repeat;
 }
+
+.card-user-info {
+  grid-row-start: 2;
+  grid-row-end: span 5;
+  width: 100%;
+}
+.card-user-info h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.card-user-product-info {
+  grid-column-start: 6;
+  grid-column-end: span 8;
+}
+
+.card-user-account-info {
+  grid-column-end: span 6;
+}
+
+.user-product-short {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  text-align: left;
+  background-color: black;
+}
+
+.user-product-short img {
+  padding: 1%;
+}
+
+.user-product-short p {
+  padding: 2% 5%;
+  font-size: 1.25em;
+}

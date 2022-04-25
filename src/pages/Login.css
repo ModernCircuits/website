@@ -1,18 +1,15 @@
 .page-login {
-  background-color: black;
   background-image: url("../img/background_user.jpg");
-  /* background-position: 50% 0; */
-  background-repeat: no-repeat;
-  /* background-size: cover; */
 }
 
 .card-login-form {
   grid-column: 8 / span 10;
-  grid-row: 2 / span 3;
+  grid-row: 2 / span 5;
 
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 0.2fr auto;
   grid-auto-flow: row;
 
   width: 100%;

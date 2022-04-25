@@ -74,7 +74,18 @@ export const Home = () => {
           short_description={products[1].short_description}
           long_description={products[1].long_description}
           img={products[1].img}
-        />
+        >
+          {" "}
+          <ImageGrid
+            items={[
+              { img: asic_shape_screenshot_small, alt: "ASIC Shape" },
+              { img: asic_tone_screenshot_small, alt: "ASIC Tone" },
+              { img: asic_filter_screenshot_small, alt: "ASIC Filter" },
+              { img: asic_space_screenshot_small, alt: "ASIC Space" },
+              { img: asic_dynamic_screenshot_small, alt: "ASIC Dynamic" },
+            ]}
+          />
+        </HomeProductPreview>
       </div>
     </div>
   );

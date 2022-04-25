@@ -21,8 +21,10 @@ const AboutFounder: React.FunctionComponent<
       <h2 className="center">{props.name}</h2>
       <hr />
       <h3 className="center">{props.position}</h3>
-      <img src={props.img} alt={props.name} className="center" />
-      <p>{props.description}</p>
+      <div className="card-person-content">
+        <img src={props.img} alt={props.name} className="center" />
+        <p>{props.description}</p>
+      </div>
     </div>
   );
 };
@@ -54,7 +56,7 @@ export const About = () => {
       <AboutFounder
         name="Lukas Kähler"
         description="Music producer, multi-instrumentalist and expert in DSP programming"
-        position="CEO"
+        position="CSO"
         img={lukas}
         className="card-lukas"
       />

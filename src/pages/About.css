@@ -3,36 +3,41 @@
 }
 
 .card-person {
-  grid-column-end: span 5;
+  grid-column-end: span 6;
   grid-row-start: 2;
-  grid-row-end: span 9;
-}
-
-.card-person p {
-  text-align: justify;
-  padding: 0.25rem;
-  opacity: 0%;
-}
-
-.card-person:hover p {
-  opacity: 100%;
-  transition: 300ms ease-in;
-}
-
-.card-person img {
-  padding: 0.25rem;
-  width: 100%;
+  grid-row-end: span 10;
 }
 
 .card-person h2 {
-  padding: 0.25rem;
   font-weight: 100;
   text-transform: uppercase;
 }
 
 .card-person h3 {
-  padding: 0.25rem;
+  padding: 0.5rem;
   font-weight: 400;
+}
+
+.card-person-content p {
+  opacity: 0%;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.card-person-content img {
+  padding: 0.25rem;
+  max-width: 100%;
+  clip-path: circle(38% at 50% 40%);
+}
+
+.card-person-content:hover p {
+  opacity: 100%;
+  transition: all 300ms ease-in-out;
+}
+
+.card-person-content:hover img {
+  opacity: 50%;
+  transition: all 300ms ease-in-out;
 }
 
 .card-milan {

@@ -14,13 +14,13 @@
 }
 
 .card-milan {
-  grid-column-start: 5;
+  grid-column-start: 6;
 }
 
 .card-tobias {
-  grid-column-start: 11;
+  grid-column-start: 12;
 }
 
 .card-lukas {
-  grid-column-start: 17;
+  grid-column-start: 18;
 }

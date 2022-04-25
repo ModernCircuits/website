@@ -23,6 +23,9 @@ export const NavBar = (): JSX.Element => {
           <Link to="plugins" className="nav-link nav-link-text">
             Plugins
           </Link>
+          <Link to="zentrale" className="nav-link nav-link-text">
+            Zentrale
+          </Link>
           <Link to="about" className="nav-link nav-link-text">
             About Us
           </Link>
@@ -31,10 +34,10 @@ export const NavBar = (): JSX.Element => {
           </Link>
           <div className="nav-link-icons">
             <Link to="#" className="nav-link">
-              <img src={cart} alt="Shopping Cart" />
+              <img src={cart} alt="Shopping Cart" className="nav-link-icon" />
             </Link>
             <Link to="login" className="nav-link">
-              <img src={user} alt="User Account" />
+              <img src={user} alt="User Account" className="nav-link-icon" />
             </Link>
           </div>
         </div>

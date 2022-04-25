@@ -11,14 +11,13 @@ interface AboutFounderProps {
   description: string;
   position: string;
   img: string;
-  grid_position: string;
 }
 
 const AboutFounder: React.FunctionComponent<
   AboutFounderProps & React.HTMLAttributes<HTMLDivElement>
-> = (props: AboutFounderProps) => {
+> = (props) => {
   return (
-    <div className={"card card-primary card-person " + props.grid_position}>
+    <div className={"card card-primary card-person " + props.className}>
       <h2 className="center">{props.name}</h2>
       <hr />
       <h3 className="center">{props.position}</h3>
@@ -43,21 +42,21 @@ export const About = () => {
         description="Sounddesigner, studio-musician and expert in recording technology"
         position="CEO"
         img={milan}
-        grid_position="card-milan"
+        className="card-milan"
       />
       <AboutFounder
         name="Tobias Hienzsch"
         description="Tech developer and expert in digital networking and circuits"
         position="CTO"
         img={tobias}
-        grid_position="card-tobias"
+        className="card-tobias"
       />
       <AboutFounder
         name="Lukas Kähler"
         description="Music producer, multi-instrumentalist and expert in DSP programming"
         position="CEO"
         img={lukas}
-        grid_position="card-lukas"
+        className="card-lukas"
       />
     </div>
   );

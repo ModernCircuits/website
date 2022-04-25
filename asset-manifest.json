@@ -1,26 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.de48742f.css",
-    "main.js": "/static/js/main.79f61e2a.js",
+    "main.css": "/static/css/main.02c3b45f.css",
+    "main.js": "/static/js/main.244d33de.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
-    "static/media/background_plugins.jpg": "/static/media/background_plugins.9df2a7575186de0f8d72.jpg",
+    "static/media/background_plugins.jpg": "/static/media/background_plugins.3f64d86476c84cc599ec.jpg",
+    "static/media/background_user.jpg": "/static/media/background_user.40611505327f7dec705c.jpg",
     "static/media/background_impressum.jpg": "/static/media/background_impressum.5760fe35312729ee7b9c.jpg",
     "static/media/background_home.jpg": "/static/media/background_home.356299663043d1403a5d.jpg",
     "static/media/tobias.jpg": "/static/media/tobias.995a7b5bae08339b6cc2.jpg",
     "static/media/lukas.jpg": "/static/media/lukas.374d5b06fc36b134f8b4.jpg",
     "static/media/milan.jpg": "/static/media/milan.2b3d2aaf1d49f7c66c71.jpg",
+    "static/media/asic_filter_screenshot_small.png": "/static/media/asic_filter_screenshot_small.5d8ecba1df7cd652685c.png",
+    "static/media/asic_tone_screenshot_small.png": "/static/media/asic_tone_screenshot_small.5b1fae143a47a6cb4a98.png",
+    "static/media/asic_dynamic_screenshot_small.png": "/static/media/asic_dynamic_screenshot_small.c115bdaeee7ff0b0318e.png",
+    "static/media/asic_shape_screenshot_small.png": "/static/media/asic_shape_screenshot_small.803961c9dbc798e8ce75.png",
+    "static/media/asic_space_screenshot_small.png": "/static/media/asic_space_screenshot_small.5fe1d80d17742b965fd5.png",
     "static/media/logo512.png": "/static/media/logo512.7a48cd7555e4088498b1.png",
-    "static/media/zentrale_logo.png": "/static/media/zentrale_logo.261598f1b7b5ecd2b4e5.png",
-    "static/media/instagram.svg": "/static/media/instagram.63c60387599e639b89aaa7cb3846635d.svg",
-    "static/media/twitter.svg": "/static/media/twitter.5832354d9940b6ba0bd957483d327e15.svg",
+    "static/media/asic_tone_vlcd.png": "/static/media/asic_tone_vlcd.d95a78bf6cdde46db1ae.png",
+    "static/media/asic_filter_vlcd.png": "/static/media/asic_filter_vlcd.15ce26df0909d2ce46a1.png",
+    "static/media/asic_dynamic_vlcd.png": "/static/media/asic_dynamic_vlcd.03faaeed31d147b1a08a.png",
+    "static/media/asic_space_vlcd.png": "/static/media/asic_space_vlcd.fdcd097769def42ca686.png",
+    "static/media/asic_shape_vlcd.png": "/static/media/asic_shape_vlcd.626224862d671c0e5a16.png",
+    "static/media/cart.svg": "/static/media/cart.9a2a8fffcf9139cefd0f3d58d80fc886.svg",
     "index.html": "/index.html",
-    "static/media/facebook.svg": "/static/media/facebook.7be22e4dd6afaa9a0313d6bfef3e522f.svg",
-    "main.de48742f.css.map": "/static/css/main.de48742f.css.map",
-    "main.79f61e2a.js.map": "/static/js/main.79f61e2a.js.map",
+    "static/media/user.svg": "/static/media/user.2b18b5c20b50cb19b714b428c72efb4e.svg",
+    "main.02c3b45f.css.map": "/static/css/main.02c3b45f.css.map",
+    "main.244d33de.js.map": "/static/js/main.244d33de.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de48742f.css",
-    "static/js/main.79f61e2a.js"
+    "static/css/main.02c3b45f.css",
+    "static/js/main.244d33de.js"
   ]
 }

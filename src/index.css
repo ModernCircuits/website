@@ -69,3 +69,8 @@ footer {
 .card-primary-alpha {
   background-color: var(--primary-alpha);
 }
+
+.card-heading {
+  font-weight: 100;
+  text-transform: uppercase;
+}

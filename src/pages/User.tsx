@@ -26,7 +26,7 @@ export const User = () => {
   return (
     <div className="page-content page-user">
       <div className="card card-primary card-user-info card-user-product-info ">
-        <h2 className="center">Products</h2>
+        <h2 className="card-heading center">Products</h2>
         <hr />
         <UserProduct name="ASIC Dynamic" logo={asic_dynamic_logo} />
         <UserProduct name="ASIC Filter" logo={asic_filter_logo} />
@@ -35,7 +35,7 @@ export const User = () => {
         <UserProduct name="ASIC Tone" logo={asic_tone_logo} />
       </div>
       <div className="card card-primary card-user-info card-user-account-info ">
-        <h2 className="center">Account</h2>
+        <h2 className="card-heading center">Account</h2>
         <hr />
       </div>
     </div>

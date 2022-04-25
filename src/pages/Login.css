@@ -3,12 +3,41 @@
   background-image: url("../img/background_user.jpg");
   /* background-position: 50% 0; */
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 .card-login-form {
-  grid-column-start: 8;
-  grid-column-end: span 12;
-  grid-row-start: 3;
-  grid-row-end: span 6;
+  grid-column: 8 / span 10;
+  grid-row: 2 / span 3;
+
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-flow: row;
+
+  width: 100%;
+}
+
+.card-login-form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: row;
+}
+
+.card-login-form form input {
+  grid-column-end: span 2;
+  background-color: black;
+  border: none;
+  margin: 2% 0;
+  padding: 2%;
+}
+
+.card-login-form form input:focus {
+  outline: none;
+}
+
+.card-login-form form button {
+  background-color: black;
+  border: none;
+  border-radius: 8px;
 }

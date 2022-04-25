@@ -8,10 +8,6 @@
   grid-row-end: span 5;
   width: 100%;
 }
-.card-user-info h2 {
-  font-weight: 100;
-  text-transform: uppercase;
-}
 
 .card-user-product-info {
   grid-column-start: 6;

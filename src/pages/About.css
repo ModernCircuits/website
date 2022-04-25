@@ -1,0 +1,48 @@
+.page-about {
+  background-image: url("../img/background_home.jpg");
+}
+
+.card-person {
+  grid-column-end: span 5;
+  grid-row-start: 2;
+  grid-row-end: span 9;
+}
+
+.card-person p {
+  text-align: justify;
+  padding: 0.25rem;
+  opacity: 0%;
+}
+
+.card-person:hover p {
+  opacity: 100%;
+  transition: 300ms ease-in;
+}
+
+.card-person img {
+  padding: 0.25rem;
+  width: 100%;
+}
+
+.card-person h2 {
+  padding: 0.25rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.card-person h3 {
+  padding: 0.25rem;
+  font-weight: 400;
+}
+
+.card-milan {
+  grid-column-start: 6;
+}
+
+.card-tobias {
+  grid-column-start: 12;
+}
+
+.card-lukas {
+  grid-column-start: 18;
+}

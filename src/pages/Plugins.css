@@ -1,0 +1,60 @@
+.page-plugins {
+  background-image: url("../img/background_plugins.jpg");
+}
+
+.section-plugin-preview {
+  grid-column-start: 8;
+  grid-column-end: span 12;
+  grid-row-start: 2;
+  grid-row-end: span 10;
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.card-plugin-preview {
+  display: grid;
+  grid-template-columns: 1;
+  grid-auto-flow: row;
+}
+
+.card-plugin-preview hr {
+  margin: auto;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.card-plugin-preview-heading {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card-plugin-preview h3,
+.card-plugin-preview h4 {
+  font-weight: 100;
+}
+.card-plugin-preview h3 {
+  font-size: 2rem;
+}
+
+.card-plugin-preview h4 {
+  font-size: 1.25rem;
+}
+
+.card-plugin-preview-heading-text {
+  grid-column: 2 / span 3;
+}
+
+.card-plugin-preview-heading-full {
+  grid-column: 1 / span 4;
+  width: 100%;
+}
+
+.asic-bundle-description {
+  text-align: justify;
+  font-size: 0.9rem;
+}

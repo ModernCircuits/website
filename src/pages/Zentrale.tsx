@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./Support.css";
+import "./Zentrale.css";
 
-export const Support = () => {
+export const Zentrale = () => {
   return (
-    <div className="page-content page-support">
+    <div className="page-content page-zentrale">
       <div className="card card-primary card-coming-soon section">
         Coming Soon
       </div>

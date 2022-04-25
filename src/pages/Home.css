@@ -1,0 +1,38 @@
+.page-home {
+  background-image: url("../img/background_home.jpg");
+}
+
+.card-home {
+  grid-row-start: 2;
+  grid-row-end: span 8;
+}
+
+.card-home-asic {
+  grid-column-start: 6;
+  grid-column-end: span 10;
+}
+
+.card-home-zentrale {
+  grid-column-start: 16;
+  grid-column-end: span 8;
+}
+
+.card-home * {
+  text-align: justify;
+}
+
+.card-home p {
+  text-align: justify;
+}
+
+.card-home h2 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.card-home h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+}

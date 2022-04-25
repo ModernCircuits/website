@@ -87,10 +87,35 @@ const UserProductList = () => {
   );
 };
 
-export const User = () => {
+const UserAccountPropertyList = () => {
   const name = "Lukas Kähler";
   const email = "lukas@modern-circuits.com";
 
+  return (
+    <div className="card-user-account-property-list">
+      <div className="card-user-account-property">
+        <p>
+          Name: <b>{name}</b>
+        </p>
+        <img src={pen} alt="Edit" />
+      </div>
+      <div className="card-user-account-property">
+        <p>
+          Email: <b>{email}</b>
+        </p>
+        <img src={pen} alt="Edit" />
+      </div>
+      <div className="card-user-account-property">
+        <p>
+          Password: <b>*****</b>
+        </p>
+        <img src={pen} alt="Edit" />
+      </div>
+    </div>
+  );
+};
+
+export const User = () => {
   return (
     <div className="page-content page-user">
       <div className="card card-primary card-user-info card-user-product-info ">
@@ -101,26 +126,7 @@ export const User = () => {
       <div className="card card-primary card-user-info card-user-account-info ">
         <h2 className="card-heading center">Account</h2>
         <hr />
-        <div className="card-user-account-property-list">
-          <div className="card-user-account-property">
-            <p>
-              Name: <b>{name}</b>
-            </p>
-            <img src={pen} alt="Edit" />
-          </div>
-          <div className="card-user-account-property">
-            <p>
-              Email: <b>{email}</b>
-            </p>
-            <img src={pen} alt="Edit" />
-          </div>
-          <div className="card-user-account-property">
-            <p>
-              Password: <b>*****</b>
-            </p>
-            <img src={pen} alt="Edit" />
-          </div>
-        </div>
+        <UserAccountPropertyList />
       </div>
     </div>
   );

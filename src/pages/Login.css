@@ -28,16 +28,21 @@
   grid-column-end: span 2;
   background-color: black;
   border: none;
-  margin: 2% 0;
-  padding: 2%;
+  margin: 1% 0;
+  padding: 1%;
+  font-size: 1.125rem;
 }
 
 .card-login-form form input:focus {
-  outline: none;
+  outline: 2px solid var(--primary-300);
 }
 
 .card-login-form form button {
-  background-color: black;
+  background-color: var(--primary-300);
   border: none;
   border-radius: 8px;
+}
+
+.card-login-form form button:hover {
+  background-color: var(--primary-400);
 }

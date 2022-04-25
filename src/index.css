@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap");
 
 :root {
-  --primary: #0f223a;
-  --primary-alpha: rgba(31, 71, 122, 0.4);
+  --oxford-blue: #0f223aff;
+  --blue-jeans: #4bb3fdff;
+  --dodger-blue: #0496ffff;
+  --bright-navy-blue: #027bceff;
+  --honeydew: #eaf2e3ff;
+
+  --primary-200: var(--blue-jeans);
+  --primary-300: var(--dodger-blue);
+  --primary-400: var(--bright-navy-blue);
+  --primary-500: var(--oxford-blue);
+
   --white: #eeeeee;
   --black: #131313;
 }
@@ -25,7 +34,7 @@
 }
 
 body {
-  background: var(--primary);
+  background: var(--primary-500);
 }
 
 footer {
@@ -63,11 +72,7 @@ footer {
 }
 
 .card-primary {
-  background-color: var(--primary);
-}
-
-.card-primary-alpha {
-  background-color: var(--primary-alpha);
+  background-color: var(--primary-500);
 }
 
 .card-heading {

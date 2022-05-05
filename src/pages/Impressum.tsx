@@ -26,7 +26,7 @@ export const Impressum = () => {
             Steuernummer / Tax: <b>30/446/50492</b>
           </p>
           <p>
-            Geschäftsführer / CEO: <b>Milan Rottinger</b>
+            Geschäftsführer / CEO: <b>Tobias Hienzsch</b>
           </p>
           <p>
             Kontakt / Contact: <b>mail@modern-circuits.com</b>
